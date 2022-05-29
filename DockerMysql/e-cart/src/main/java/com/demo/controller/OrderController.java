@@ -17,7 +17,7 @@ public class OrderController {
 	OrderService orderService;
 
 	@GetMapping(value="/order/id")
-	private Order getOrder(@PathVariable("id")long id) {
+	pubilc Order getOrder(@PathVariable("id")long id) {
 		return orderService.getOrderById(id);
 		
 	}
